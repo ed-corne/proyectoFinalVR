@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_1d73w"]
 [ext_resource type="Material" uid="uid://b4s0xnt1f6lia" path="res://Materials/Green.tres" id="1_o5nrg"]
-[ext_resource type="Material" uid="uid://bi1h4xe7msjwi" path="res://Materials/Pink.tres" id="3_irgfk"]
 [ext_resource type="Material" uid="uid://b122sws3pt7w7" path="res://Materials/Red.tres" id="4_nuwel"]
+[ext_resource type="PackedScene" uid="uid://bwvexjjgecvn5" path="res://Scenes/coin.tscn" id="5_188ur"]
 [ext_resource type="Material" uid="uid://p2nkjd3ge3qm" path="res://Materials/Blue.tres" id="5_te4rd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5lq0h"]
@@ -27,52 +27,143 @@ glow_enabled = true
 
 [node name="Map" type="Node3D" parent="."]
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="Map"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -29.5653)
-material_override = ExtResource("3_irgfk")
+[node name="CSGBox3D11" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, -3.69942, 4.53764, -17.395)
+material_override = ExtResource("4_nuwel")
 use_collision = true
-size = Vector3(52.4636, 5.83948, 1)
+size = Vector3(30.2314, 9.27487, 1.23877)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="Map"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 29.3824)
+[node name="CSGBox3D10" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -18.2442, 4.08841, -9.82476)
+material_override = ExtResource("4_nuwel")
 use_collision = true
-size = Vector3(52.4636, 5.83948, 1)
-material = ExtResource("3_irgfk")
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -26, 0, 0.382374)
-material_override = ExtResource("3_irgfk")
-use_collision = true
-size = Vector3(60, 5.83948, 1)
-
-[node name="CSGBox3D5" type="CSGBox3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 26, 0, 0.382374)
-material_override = ExtResource("3_irgfk")
-use_collision = true
-size = Vector3(60, 5.83948, 1)
+size = Vector3(16.3855, 10.2457, 1.23877)
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, -2, 0.382374)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -17.8218, 4.52825, 12.1136)
 material_override = ExtResource("4_nuwel")
 use_collision = true
-size = Vector3(4, 5.83948, 4)
-
-[node name="CSGBox3D7" type="CSGBox3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 0, -5.61763)
-material_override = ExtResource("5_te4rd")
-use_collision = true
-size = Vector3(4, 5.83948, 4)
+size = Vector3(28.6455, 9.51462, 1.23877)
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="Map"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 0, -12.6176)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.30405, 2.03429, 6.88547)
 material_override = ExtResource("4_nuwel")
 use_collision = true
-size = Vector3(4, 8, 4)
+size = Vector3(14.3146, 4.19329, 1.23877)
+
+[node name="CSGBox3D25" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 21.1743, 1.83212, 13.2889)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(14.3146, 3.71453, 1.23877)
+
+[node name="CSGBox3D24" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-2.18493e-07, 0.0241181, 0.999709, 5.27118e-09, 0.999709, -0.0241181, -1, 0, -2.18557e-07, 18.745, 1.85267, 16.1643)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(4.77845, 3.80442, 1.23877)
+
+[node name="CSGBox3D26" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 18.7902, 1.85422, 9.35322)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(6.45372, 3.82018, 1.23877)
+
+[node name="CSGBox3D32" type="CSGBox3D" parent="Map"]
+transform = Transform3D(3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 6.2779, 1.13596, 10.6592)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(6.36099, 2.36342, 1.12195)
+
+[node name="CSGBox3D31" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-3.93403e-07, 0, 1, 0, 1, 0, -1, 0, -3.93403e-07, 6.29907, 1.19359, 3.40967)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(5.5757, 2.44728, 1.0144)
+
+[node name="CSGBox3D30" type="CSGBox3D" parent="Map"]
+transform = Transform3D(4.80825e-07, 0, -1, 0, 1, 0, 1, 0, 4.80825e-07, 8.53967, 1.17999, 6.69787)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(9.8943, 2.44728, 1.0144)
+
+[node name="CSGBox3D35" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-1, 0, -9.61651e-07, 0, 1, 0, 9.61651e-07, 0, -1, 17.4586, 1.01977, 2.27852)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(17.1901, 2.44728, 0.959839)
+
+[node name="CSGBox3D34" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-1, 0, -9.61651e-07, 0, 1, 0, 9.61651e-07, 0, -1, 2.36663, 1.17606, 5.6632)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(8.19501, 2.44728, 1.0144)
+
+[node name="CSGBox3D33" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-1, 0, -9.61651e-07, 0, 1, 0, 9.61651e-07, 0, -1, 2.44647, 1.13282, 7.95673)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(8.40305, 2.36866, 0.992737)
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.19771, 2.049, 14.9937)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(1.03727, 4.19329, 3.97943)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Map"]
+transform = Transform3D(6.01673e-06, -0.00242601, -0.999997, -0.00242605, 0.999997, -0.002426, 0.999997, 0.002426, 1.31134e-07, -4.62284, 2.07709, 16.1112)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(4.03983, 4.22366, 1.23877)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 3.72529e-08, 6.06024e-06, -1.0361e-07, 1, -0.00242602, -6.06045e-06, 0.00242598, 0.999997, -2.43027, 2.08737, 16.5746)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(3.44685, 4.18941, 1.57074)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4.57699, 1.75921, 7.49701)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(13.6892, 4.85496, 1.23877)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -9.21189, 1.80634, 10.6811)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(20.1155, 4.7979, 1.23877)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.384705, 0.299764, 24.2085)
+material_override = ExtResource("5_te4rd")
+use_collision = true
+size = Vector3(0.588135, 0.698212, 0.835205)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.55232)
 material_override = ExtResource("1_o5nrg")
 use_collision = true
-size = Vector3(52.2363, 0.002, 59.575)
+size = Vector3(52.2363, 0.002, 64.6796)
+
+[node name="coin8" parent="Map/CSGBox3D" instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.528, 0.311975, -3.72868)
+
+[node name="coin9" parent="Map/CSGBox3D" instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9, 0.311975, -3.72868)
+
+[node name="coin10" parent="Map/CSGBox3D" instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.0263, 0.311975, -3.72868)
+
+[node name="coin11" parent="Map/CSGBox3D" instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.6745, 0.311975, -6.55971)
+
+[node name="coin12" parent="Map/CSGBox3D" instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.0013, 0.311975, -6.24387)
+
+[node name="coin13" parent="Map/CSGBox3D" instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8008, 0.311975, -9.15648)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Map"]
 environment = SubResource("Environment_g2h84")
@@ -81,7 +172,227 @@ environment = SubResource("Environment_g2h84")
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
 
+[node name="CSGBox3D16" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -21.3231, 4.44792, -3.86124)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(51.3071, 9.05125, 1.23877)
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 3.72945, 4.61078, 26.0202)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(44.4993, 9.33269, 1.23877)
+
+[node name="CSGBox3D23" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, -5.24536e-07, 0, 1, 0, 5.24536e-07, 0, 1, 6.94781, 2.09046, 20.5387)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(33.0594, 4.25731, 1.23877)
+
+[node name="CSGBox3D28" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, -1.04907e-06, 0, 1, 0, 1.04907e-06, 0, 1, 25.6101, 2.17109, 23.1887)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(0.74595, 4.26714, 6.58623)
+
+[node name="CSGBox3D27" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, -1.57361e-06, 0, 1, 0, 1.57361e-06, 0, 1, 24.5763, 2.16402, 20.5128)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(2.67164, 4.3341, 1.22158)
+
+[node name="CSGBox3D29" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, -3.14722e-06, 0, 1, 0, 3.14722e-06, 0, 1, 19.9337, 1.84067, 6.42104)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(1.88983, 3.71091, 0.634253)
+
+[node name="CSGBox3D22" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-1, 0, 7.86804e-07, 0, 1, 0, -7.86804e-07, 0, -1, 6.55253, 2.10913, 17.9911)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(23.6653, 4.2275, 1.23877)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.881181, 8.61149, -23.2749)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(12.8478, 21.1066, 1.23877)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 0.898774, 4.51322, -21.4364)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(21, 9.3237, 1.23877)
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-1, 8.74228e-08, 4.37114e-08, -4.37114e-08, 1.91069e-15, -1, -8.74228e-08, -1, 1.91069e-15, -1.93762, 6.0217, -8.23557)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(32.1329, 17.8475, 1.57837)
+
+[node name="Label3D" type="Label3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4139, 2.43788, 27.8436)
+modulate = Color(0.796078, 0.843137, 1, 1)
+text = "Bienvenido a nuestro simulador de realidad virtual diseñado 
+para ayudarte a enfrentar y superar tu claustrofobia.
+"
+font_size = 48
+
+[node name="Label3D3" type="Label3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0577, 3.05475, 28.2266)
+text = "¡Estás a punto de comenzar un viaje de valentía y auto-descubrimiento!"
+font_size = 48
+
+[node name="Label3D2" type="Label3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.69512, 2.62281, 27.9533)
+modulate = Color(0.666667, 0.933333, 1, 1)
+text = "A lo largo de esta aventura, te guiaré por diferentes fases que te ayudarán 
+a ganar confianza y a 	manejar tu miedo a los espacios cerrados. 
+
+"
+font_size = 48
+
+[node name="Label3D4" type="Label3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.9233, 1.61489, -25.4615)
+modulate = Color(0.960784, 0.843137, 1, 1)
+text = "¡Excelente trabajo!
+"
+font_size = 48
+
+[node name="Label3D4" type="Label3D" parent="Map/Label3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.17044, -0.823796, -2.25686)
+modulate = Color(1, 0.843137, 0.776471, 1)
+text = "Tómate un momento para relajarte y 
+reflexionar sobre tu progreso. "
+font_size = 48
+
+[node name="Label3D" type="Label3D" parent="Map/Label3D4/Label3D4"]
+
+[node name="Label3D4" type="Label3D" parent="Map/Label3D4/Label3D4"]
+transform = Transform3D(0.398301, 0, -0.917255, 0, 1, 0, 0.917255, 0, 0.398301, 4.041, 0.048785, 2.94996)
+modulate = Color(0.709804, 0.976471, 0.588235, 1)
+text = "Recuerda que enfrentar tus miedos es un proceso, 
+y ya estás haciendo grandes avances.
+"
+font_size = 48
+
+[node name="Label3D" type="Label3D" parent="Map/Label3D4/Label3D4/Label3D4"]
+
+[node name="Label3D5" type="Label3D" parent="Map"]
+transform = Transform3D(0.528616, 0, -0.848861, 0, 1, 0, 0.848861, 0, 0.528616, 15.5405, 1.86586, -21.8625)
+modulate = Color(1, 0.576471, 0.713726, 1)
+text = "El desafío aumenta. 
+Respira profundo y sigue confiando en ti. 
+¡Lo estás haciendo genial!"
+font_size = 48
+
+[node name="Label3D6" type="Label3D" parent="Map"]
+transform = Transform3D(-0.999937, 0, -0.0112048, 0, 1, 0, 0.0112048, 0, -0.999937, 12.2426, 3.85126, -10.2196)
+modulate = Color(0, 0.933333, 0.976471, 1)
+text = "Has avanzado mucho
+ y estás a punto de 
+lograr tu objetivo. 
+"
+font_size = 24
+
+[node name="Label3D7" type="Label3D" parent="Map"]
+transform = Transform3D(-0.999731, 0, 0.0232108, 0, 1, 0, -0.0232108, 0, -0.999731, -9.26096, 3.62829, 0.248276)
+modulate = Color(0.54902, 0.286275, 1, 1)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "Ahora, tú decides el camino. Confía en tus instintos y sigue adelante.
+"
+outline_size = 6
+
+[node name="Label3D8" type="Label3D" parent="Map"]
+transform = Transform3D(-0.111608, 0, -0.993752, 0, 1, 0, 0.993752, 0, -0.111608, 2.97155, 0.931862, 19.2262)
+modulate = Color(1, 0.615686, 0.866667, 1)
+text = "Respira 
+profundo y
+sigue confiando 
+en ti"
+outline_size = 5
+
+[node name="Label3D9" type="Label3D" parent="Map"]
+transform = Transform3D(0.188873, 0, -0.982002, 0, 1, 0, 0.982002, 0, 0.188873, 20.3389, 0.317371, -0.229057)
+modulate = Color(0.913725, 0.788235, 0, 1)
+outline_modulate = Color(0.392157, 0.392157, 0.392157, 1)
+text = "¡Lo lograste! Este espacio amplio simboliza tu éxito.
+ Felicidades.
+"
+outline_size = 5
+
+[node name="Label3D10" type="Label3D" parent="Map"]
+transform = Transform3D(0.0499654, 0, 0.998751, 0, 1, 0, -0.998751, 0, 0.0499654, 14.64, 1.0446, -1.4459)
+modulate = Color(0.631373, 0.431373, 0.972549, 1)
+text = "Gracias por usar este simulador y por
+ enfrentar tu claustrofobia con valentía."
+
+[node name="Label3D11" type="Label3D" parent="Map"]
+transform = Transform3D(0.00216421, 0, 0.999998, 0, 1, 0, -0.999998, 0, 0.00216421, 14.5808, 1.02011, -7.13878)
+text = "Recuerda que este es solo el comienzo de tu camino hacia la superación. 
+Sigue avanzando y nunca dejes de creer en ti mismo. 
+"
+
+[node name="Label3D12" type="Label3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8293, 1.28625, -12.0681)
+modulate = Color(0.647059, 0.376471, 0.976471, 1)
+text = "¡Hasta la próxima aventura!
+
+"
+font_size = 48
+
+[node name="CSGBox3D22" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 8.74228e-08, 4.37114e-08, -4.37114e-08, 1.91069e-15, 1, 8.74228e-08, -1, 5.73206e-15, -3.295, 3.39519, 9.05298)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(3.09651, 16.8152, 1.57837)
+
+[node name="CSGBox3D30" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 8.74228e-08, 4.37114e-08, -4.37114e-08, 1.91069e-15, 1, 8.74228e-08, -1, 5.73206e-15, 6.81014, 3.41687, 19.4776)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(29.8968, 2.93431, 1.57837)
+
+[node name="CSGBox3D32" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 4.37114e-08, 1.31134e-07, 4.37114e-08, -1, 5.73206e-15, 1.31134e-07, -4.65868e-21, -1, 4.38148, 3.49135, 23.1857)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(43.1819, 1.38695, 4.55824)
+
+[node name="CSGBox3D31" type="CSGBox3D" parent="."]
+transform = Transform3D(1, -1.74846e-07, -1.31134e-07, -1.31134e-07, 9.55343e-15, -1, 1.74846e-07, 1, -1.33748e-14, 19.9699, 2.98232, 12.9989)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(3.67376, 13.7772, 1.57837)
+
+[node name="CSGBox3D35" type="CSGBox3D" parent="."]
+transform = Transform3D(1, -3.0598e-07, 4.3712e-08, -3.0598e-07, -1, 2.10175e-14, 4.3712e-08, -3.43905e-14, -1, 11.9455, 2.44763, 13.1478)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(12.3918, 0.622156, 3.29624)
+
+[node name="CSGBox3D36" type="CSGBox3D" parent="."]
+transform = Transform3D(1, -1.50328e-21, 0, 9.18717e-22, 1, -5.541e-14, 0, 5.5406e-14, 1, 6.15769, 2.51452, 8.95738)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(15.7832, 0.622156, 16.9068)
+
+[node name="CSGBox3D28" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 8.74228e-08, 4.37114e-08, -4.37114e-08, 1.91069e-15, 1, 8.74228e-08, -1, 5.73206e-15, -2.30081, 3.38652, 14.7516)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(3.19718, 2.39037, 1.57837)
+
+[node name="CSGBox3D27" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 8.74228e-08, 4.37114e-08, -4.37114e-08, 1.91069e-15, 1, 8.74228e-08, -1, 5.73206e-15, -11.5469, 3.22708, 10.8822)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(12.8429, 20.5093, 1.93536)
+
 [node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9941, 0.120806, 29.9469)
 script = ExtResource("1_1d73w")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
@@ -96,3 +407,130 @@ shape = SubResource("CapsuleShape3D_wydro")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.67939, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head"]
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 10.8093, 4.36932, -25.2108)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(8.87256, 9.20846, 1.23877)
+
+[node name="CSGBox3D23" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -8.93286, 4.62053, -25.3609)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(8.87256, 9.1921, 1.23877)
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="."]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 5.56265, 2.27986, 0.0974596)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(17.0111, 6.18898, 1.06751)
+
+[node name="CSGBox3D34" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, -5.24536e-07, 0, 1, 0, 5.24536e-07, 0, 1, 12.0994, 1.19276, 14.2608)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(12.6977, 2.44793, 1.03852)
+
+[node name="CSGBox3D33" type="CSGBox3D" parent="."]
+transform = Transform3D(-1, 0, 7.86804e-07, 0, 1, 0, -7.86804e-07, 0, -1, 13.134, 1.00758, 12.0352)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(10.2757, 2.86839, 1.06751)
+
+[node name="CSGBox3D25" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, -5.24536e-07, 0, 1, 0, 5.24536e-07, 0, 1, -10.0331, 2.63113, -3.01695)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(14.973, 6.28223, 1.06751)
+
+[node name="CSGBox3D24" type="CSGBox3D" parent="."]
+transform = Transform3D(-1, 0, 7.86804e-07, 0, 1, 0, -7.86804e-07, 0, -1, -9.56345, 4.7261, 0.745261)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(15.6116, 1.1853, 0.184189)
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, -5.24536e-07, 0, 1, 0, 5.24536e-07, 0, 1, 4.18174, 2.03616, -3.08797)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(14.6136, 6.62269, 1.23877)
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 13.5333, 2.93468, -8.60926)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(16.9421, 7.61404, 1.23877)
+
+[node name="CSGBox3D26" type="CSGBox3D" parent="."]
+transform = Transform3D(-1, 8.74226e-08, -3.82136e-15, 0, -4.37114e-08, -1, -8.74226e-08, -1, 4.37114e-08, 5.23405, 4.74233, -1.54268)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(16.3221, 4.29685, 1.23877)
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="."]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 19.961, 3.29938, -16.4652)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(12.4628, 7.04696, 1.23877)
+
+[node name="CSGBox3D29" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, -5.24536e-07, 0, 1, 0, 5.24536e-07, 0, 1, 0.883224, 4.00984, -29.0627)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(20.5839, 8.12614, 1.23877)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 10.9085, 3.3174, -9.72548)
+material_override = ExtResource("4_nuwel")
+use_collision = true
+size = Vector3(14.7097, 6.86374, 1.23877)
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(0.697903, 0, 0.716192, 0, 1, 0, -0.716192, 0, 0.697903, -24.0367, 0.648745, 25.1802)
+modulate = Color(1, 0.835294, 0.639216, 1)
+text = "Al cruzar esta puerta, comienza tu desafío. 
+Cada paso es un avance hacia la superación.
+"
+font_size = 48
+
+[node name="Label3D2" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.54, 4.1362, 0)
+modulate = Color(0.662745, 1, 0.490196, 1)
+text = "Este es solo el comienzo. 
+Respira hondo y 
+avanza con calma.
+ ¡Puedes hacerlo!"
+
+[node name="coin" parent="." instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.47224, 0.272445, 29.3076)
+
+[node name="coin4" parent="." instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 0.999369, -0.0355274, 0, 0.0355274, 0.999369, -9.55099, 0.306735, 29.2958)
+
+[node name="coin2" parent="." instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.68375, 0.375545, 29.5188)
+
+[node name="coin5" parent="." instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8689, 0.274528, 29.2834)
+
+[node name="coin6" parent="." instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.3638, 0.334431, -6.73742)
+
+[node name="coin7" parent="." instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.063, 0.356237, -6.67951)
+
+[node name="coin8" parent="." instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.5866, 0.311975, -4.10191)
+
+[node name="coin3" parent="." instance=ExtResource("5_188ur")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.24117, 0.323995, 29.4008)
+
+[node name="Label3D3" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6736, 4.09656, -9.24079)
+modulate = Color(0.756863, 0.898039, 1, 1)
+text = "El camino se estrecha. 
+Mantén la calma y
+ sigue adelante. 
+¡Eres fuerte!
+"
