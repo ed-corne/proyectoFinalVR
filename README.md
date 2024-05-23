@@ -61,7 +61,7 @@ El juego consiste en una serie de fases progresivas que guían al jugador desde 
 1. **Clona este repositorio:**
 
    ```sh
-   git clone
+   git clone https://github.com/ed-corne/proyectoFinalVR.git
    ```
 
 2. **Abre el proyecto en Godot 4:**
