@@ -4,9 +4,9 @@ Este proyecto es un videojuego de realidad virtual desarrollado en Godot 4, dise
 
 ## Equipo
 
-CHRISTOPHER URIEL RAMIREZ GARCIA
-BRAYAN SHALOAT BE BARRAGAN PULIDO
-EDWIN JOEL CORNEJO CHAVEZ
+- CHRISTOPHER URIEL RAMIREZ GARCIA
+- BRAYAN SHALOAT BE BARRAGAN PULIDO
+- EDWIN JOEL CORNEJO CHAVEZ
 
 ## Descripción del Proyecto
 
