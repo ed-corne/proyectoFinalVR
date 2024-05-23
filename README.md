@@ -2,6 +2,12 @@
 
 Este proyecto es un videojuego de realidad virtual desarrollado en Godot 4, diseñado para ayudar a los jugadores a enfrentar y superar su claustrofobia. A través de un recorrido por un laberinto con diferentes niveles de dificultad, el jugador experimentará situaciones controladas que incrementan su confianza y capacidad para manejar el miedo a los espacios cerrados.
 
+## Equipo
+
+CHRISTOPHER URIEL RAMIREZ GARCIA
+BRAYAN SHALOAT BE BARRAGAN PULIDO
+EDWIN JOEL CORNEJO CHAVEZ
+
 ## Descripción del Proyecto
 
 El juego consiste en una serie de fases progresivas que guían al jugador desde un entorno amplio hasta pasillos cada vez más angostos y oscuros. A lo largo del recorrido, se proporcionan áreas de descanso con mensajes motivadores y de progreso, culminando en una zona amplia que simboliza la superación de la claustrofobia.
